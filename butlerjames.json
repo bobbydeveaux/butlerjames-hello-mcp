@@ -1,0 +1,13 @@
+{
+  "name": "Hello",
+  "description": "A sample integration: says hello with the title of example.com.",
+  "command": ["/app/integration"],
+  "tools": [
+    {
+      "name": "hello",
+      "description": "Says hello, with the title of https://example.com/ fetched through the broker.",
+      "inputSchema": {"type":"object","properties":{"name":{"type":"string"}}}
+    }
+  ],
+  "sites": [{"origin": "https://example.com", "methods": ["GET"]}]
+}
